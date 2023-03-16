@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import '../controllers/home_controller.dart';
 
 class TypingField extends StatelessWidget {
   TypingField({
@@ -26,11 +23,7 @@ class TypingField extends StatelessWidget {
           ),
           IconButton(
             icon: const Icon(Icons.send),
-            onPressed: () async {
-              var msg = _controller.text;
-              _controller.clear();
-              await Get.find<HomeController>().sendMessage(msg);
-            },
+            onPressed: () {},
           ),
         ]),
       ),

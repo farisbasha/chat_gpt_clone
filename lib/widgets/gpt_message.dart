@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class GptMessage extends StatelessWidget {
   const GptMessage({
@@ -17,7 +16,6 @@ class GptMessage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            width: Get.width * 0.7,
             decoration: const BoxDecoration(
               color: Colors.green,
               borderRadius: BorderRadius.only(
